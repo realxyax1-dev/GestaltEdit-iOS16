@@ -13,11 +13,12 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Select Xcode 14.2
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: "14.2"
-
+      - name: List installed Xcode versions
+        run: |
+          ls -la /Applications | grep Xcode ||
+      true 
+          xcodebuild -version
+          xcodebuild -showsdks
       - name: Check Xcode and SDK
         run: |
           xcodebuild -version

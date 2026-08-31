@@ -1,0 +1,60 @@
+name: Build GestaltEdit iOS 16
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Select Xcode 14.2
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: "14.2"
+
+      - name: Check Xcode and SDK
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks
+          SDK=$(xcrun --sdk iphoneos --show-sdk-version)
+          echo "iOS SDK: $SDK"
+
+          case "$SDK" in
+            16.*) echo "iOS 16 SDK detected" ;;
+            *) echo "ERROR: iOS 16 SDK not available"; exit 1 ;;
+          esac
+
+      - name: Build
+        run: |
+          mkdir -p "$RUNNER_TEMP/build"
+
+          xcodebuild archive \
+            -project GestaltEdit.xcodeproj \
+            -scheme GestaltEdit \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination "generic/platform=iOS" \
+            -archivePath "$RUNNER_TEMP/build/GestaltEdit.xcarchive" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Create IPA
+        run: |
+          APP="$RUNNER_TEMP/build/GestaltEdit.xcarchive/Products/Applications/GestaltEdit.app"
+
+          mkdir -p "$RUNNER_TEMP/Payload"
+          cp -R "$APP" "$RUNNER_TEMP/Payload/GestaltEdit.app"
+
+          cd "$RUNNER_TEMP"
+          zip -r GestaltEdit-iOS16-unsigned.ipa Payload
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: GestaltEdit-iOS16-unsigned
+          path: ${{ runner.temp }}/GestaltEdit-iOS16-unsigned.ipa

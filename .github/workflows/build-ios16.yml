@@ -15,14 +15,24 @@ jobs:
 
       - name: List installed Xcode versions
         run: |
-          ls -la /Applications | grep Xcode ||
-      true 
+          ls -la /Applications | grep Xcode || true
+          xcodebuild -version
+          xcodebuild -showsdks
+
+      - name: Check Xcode and SDK
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks
+          SDK=$(xcrun --sdk iphoneos --show-sdk-version)
+          echo "iOS SDK: $SDK"
+        true 
           xcodebuild -version
           xcodebuild -showsdks
       - name: Check Xcode and SDK
         run: |
           xcodebuild -version
           xcodebuild -showsdks
+          
           SDK=$(xcrun --sdk iphoneos --show-sdk-version)
           echo "iOS SDK: $SDK"
 

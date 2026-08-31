@@ -2,10 +2,12 @@ name: Build GestaltEdit iOS 16
 
 on:
   workflow_dispatch:
-
+  push:
+    branches:
+      - main
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-13
 
     steps:
       - name: Checkout source

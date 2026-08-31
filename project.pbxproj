@@ -1,0 +1,196 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F85B69CCB8873CBC1DBD61D7 /* AutomationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0451BFED7D61C4BC1313E359 /* AutomationCommand.swift */; };
+		82FDB5029E6F8623BBAF7240 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3E48D4B9BABC5FB05CF463 /* ContentView.swift */; };
+		7C99E469E6384ECB4E10D8AE /* GestaltBackupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F09E3AF6638F0F2D0237D /* GestaltBackupStore.swift */; };
+		517CF8BC4A21ACD5F1F712E6 /* GestaltEditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577B30C0077606BF09E1B6E /* GestaltEditApp.swift */; };
+		E2EAE212135C7731567EF06D /* GestaltModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE17F68136FCBAB403179206 /* GestaltModels.swift */; };
+		51D6A05DB6B1401D6DABE64C /* GestaltTweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B95E8E851015D566467B56 /* GestaltTweaks.swift */; };
+		3DB50C1D98779D347AF6B68C /* GestaltViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F766EB03186F61005C16D /* GestaltViewModel.swift */; };
+		6F9F5E4DFA053F84515CF9CE /* NeoSpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8AC9ED2CBA57AC50A48D8 /* NeoSpringView.swift */; };
+		1317C5515CBC5BDA8B061176 /* BadQueryBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C0209615535A41A7C4156 /* BadQueryBridge.m */; };
+		FF54BAEC17D150020584C6CF /* GestaltAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD813E72903874753F2CF45 /* GestaltAccess.m */; };
+		94B723FE994BB4C703F0207E /* PlacardIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 374A0A6C5B018171A68A16EF /* PlacardIcon.png */; };
+		A77D703051A65A5D191096FA /* RewardCode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 712ED93706B260E5C110A8C1 /* RewardCode.jpg */; };
+		CFB504A20C131EC9F45FB22A /* SUSSAvatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A612ADFB930D777D11B7D3E9 /* SUSSAvatar.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000120 /* GestaltEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestaltEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0451BFED7D61C4BC1313E359 /* AutomationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutomationCommand.swift"; sourceTree = "<group>"; };
+		CB3E48D4B9BABC5FB05CF463 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		5A0F09E3AF6638F0F2D0237D /* GestaltBackupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltBackupStore.swift"; sourceTree = "<group>"; };
+		B577B30C0077606BF09E1B6E /* GestaltEditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltEditApp.swift"; sourceTree = "<group>"; };
+		AE17F68136FCBAB403179206 /* GestaltModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltModels.swift"; sourceTree = "<group>"; };
+		34B95E8E851015D566467B56 /* GestaltTweaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltTweaks.swift"; sourceTree = "<group>"; };
+		712F766EB03186F61005C16D /* GestaltViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltViewModel.swift"; sourceTree = "<group>"; };
+		CEC8AC9ED2CBA57AC50A48D8 /* NeoSpringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NeoSpringView.swift"; sourceTree = "<group>"; };
+		4D6C0209615535A41A7C4156 /* BadQueryBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BadQueryBridge.m"; sourceTree = "<group>"; };
+		7CD813E72903874753F2CF45 /* GestaltAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GestaltAccess.m"; sourceTree = "<group>"; };
+		268294A1EDD14262C1C2985A /* BadQueryBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BadQueryBridge.h"; sourceTree = "<group>"; };
+		109EA27EF013E88045CA4A8D /* GestaltAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GestaltAccess.h"; sourceTree = "<group>"; };
+		FE5BD8FC79C10E98FCB19AD8 /* GestaltEdit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GestaltEdit-Bridging-Header.h"; sourceTree = "<group>"; };
+		374A0A6C5B018171A68A16EF /* PlacardIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlacardIcon.png"; sourceTree = "<group>"; };
+		712ED93706B260E5C110A8C1 /* RewardCode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RewardCode.jpg"; sourceTree = "<group>"; };
+		A612ADFB930D777D11B7D3E9 /* SUSSAvatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "SUSSAvatar.jpg"; sourceTree = "<group>"; };
+		000000000000000000000030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000130000000 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; files = (
+		); };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000001 = {isa = PBXGroup; children = (
+			000000000000000000000010 /* GestaltEdit */,
+			000000000000000000000020 /* Products */,
+		); sourceTree = "<group>"; };
+		000000000000000000000010 /* GestaltEdit */ = {isa = PBXGroup; children = (
+			0451BFED7D61C4BC1313E359 /* AutomationCommand.swift */,
+			CB3E48D4B9BABC5FB05CF463 /* ContentView.swift */,
+			5A0F09E3AF6638F0F2D0237D /* GestaltBackupStore.swift */,
+			B577B30C0077606BF09E1B6E /* GestaltEditApp.swift */,
+			AE17F68136FCBAB403179206 /* GestaltModels.swift */,
+			34B95E8E851015D566467B56 /* GestaltTweaks.swift */,
+			712F766EB03186F61005C16D /* GestaltViewModel.swift */,
+			CEC8AC9ED2CBA57AC50A48D8 /* NeoSpringView.swift */,
+			4D6C0209615535A41A7C4156 /* BadQueryBridge.m */,
+			7CD813E72903874753F2CF45 /* GestaltAccess.m */,
+			268294A1EDD14262C1C2985A /* BadQueryBridge.h */,
+			109EA27EF013E88045CA4A8D /* GestaltAccess.h */,
+			FE5BD8FC79C10E98FCB19AD8 /* GestaltEdit-Bridging-Header.h */,
+			374A0A6C5B018171A68A16EF /* PlacardIcon.png */,
+			712ED93706B260E5C110A8C1 /* RewardCode.jpg */,
+			A612ADFB930D777D11B7D3E9 /* SUSSAvatar.jpg */,
+			000000000000000000000030 /* Assets.xcassets */,
+		); path = GestaltEdit; sourceTree = "<group>"; };
+		000000000000000000000020 /* Products */ = {isa = PBXGroup; children = (
+			000000000000000000000120 /* GestaltEdit.app */,
+		); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000100000000 /* GestaltEdit */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "GestaltEdit" */; buildPhases = (
+			000000000000000120000000 /* Sources */,
+			000000000000000130000000 /* Frameworks */,
+			000000000000000140000000 /* Resources */,
+		); buildRules = (); dependencies = (); name = GestaltEdit; productName = GestaltEdit; productReference = 000000000000000000000120 /* GestaltEdit.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000000 /* Project object */ = {isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1430; TargetAttributes = { 000000000000000100000000 = { CreatedOnToolsVersion = 1430; }; }; }; buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "GestaltEdit" */; compatibilityVersion = "Xcode 3.2"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, "zh-Hans",); mainGroup = 000000000000000000000001; productRefGroup = 000000000000000000000020; projectDirPath = ""; projectRoot = ""; targets = (000000000000000100000000 /* GestaltEdit */,); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000140000000 /* Resources */ = {isa = PBXResourcesBuildPhase; files = (
+
+			94B723FE994BB4C703F0207E /* PlacardIcon.png in Resources */,
+			A77D703051A65A5D191096FA /* RewardCode.jpg in Resources */,
+			CFB504A20C131EC9F45FB22A /* SUSSAvatar.jpg in Resources */,
+		); };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000120000000 /* Sources */ = {isa = PBXSourcesBuildPhase; files = (
+
+			F85B69CCB8873CBC1DBD61D7 /* AutomationCommand.swift in Sources */,
+			82FDB5029E6F8623BBAF7240 /* ContentView.swift in Sources */,
+			7C99E469E6384ECB4E10D8AE /* GestaltBackupStore.swift in Sources */,
+			517CF8BC4A21ACD5F1F712E6 /* GestaltEditApp.swift in Sources */,
+			E2EAE212135C7731567EF06D /* GestaltModels.swift in Sources */,
+			51D6A05DB6B1401D6DABE64C /* GestaltTweaks.swift in Sources */,
+			3DB50C1D98779D347AF6B68C /* GestaltViewModel.swift in Sources */,
+			6F9F5E4DFA053F84515CF9CE /* NeoSpringView.swift in Sources */,
+			1317C5515CBC5BDA8B061176 /* BadQueryBridge.m in Sources */,
+			FF54BAEC17D150020584C6CF /* GestaltAccess.m in Sources */,
+		); };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000011000000 /* Debug configuration for PBXProject "GestaltEdit" */ = {isa = XCBuildConfiguration; buildSettings = {
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+		}; name = Debug; };
+		000000000000000012000000 /* Release configuration for PBXProject "GestaltEdit" */ = {isa = XCBuildConfiguration; buildSettings = {
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+		}; name = Release; };
+		000000000000000111000000 /* Debug configuration for PBXNativeTarget "GestaltEdit" */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_C_LANGUAGE_STANDARD = gnu11;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 8;
+			DEAD_CODE_STRIPPING = YES;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = GestaltEdit;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+			MARKETING_VERSION = 1.2.1;
+			PRODUCT_BUNDLE_IDENTIFIER = me.ssus.gestaltedit;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SDKROOT = iphoneos;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SWIFT_VERSION = 5.7;
+			SWIFT_OBJC_BRIDGING_HEADER = "GestaltEdit/GestaltEdit-Bridging-Header.h";
+			TARGETED_DEVICE_FAMILY = "1,2";
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			DEVELOPMENT_TEAM = "";
+		}; name = Debug; };
+		000000000000000112000000 /* Release configuration for PBXNativeTarget "GestaltEdit" */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_C_LANGUAGE_STANDARD = gnu11;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 8;
+			DEAD_CODE_STRIPPING = YES;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = GestaltEdit;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+			MARKETING_VERSION = 1.2.1;
+			PRODUCT_BUNDLE_IDENTIFIER = me.ssus.gestaltedit;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SDKROOT = iphoneos;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SWIFT_VERSION = 5.7;
+			SWIFT_OBJC_BRIDGING_HEADER = "GestaltEdit/GestaltEdit-Bridging-Header.h";
+			TARGETED_DEVICE_FAMILY = "1,2";
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			DEVELOPMENT_TEAM = "";
+		}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000010000000 /* Build configuration list for PBXProject "GestaltEdit" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000011000000 /* Debug */, 000000000000000012000000 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000110000000 /* Build configuration list for PBXNativeTarget "GestaltEdit" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000111000000 /* Debug */, 000000000000000112000000 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000000 /* Project object */;
+}
